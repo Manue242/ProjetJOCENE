@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        tools:ignore="MissingConstraints">
+
+        <!-- TextView pour afficher le nom de l'article -->
+        <TextView
+            android:id="@+id/textViewNomArticle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Bouton pour diminuer la quantité -->
+        <Button
+            android:id="@+id/btnDiminuerQuantite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <!-- TextView pour afficher la quantité -->
+        <TextView
+            android:id="@+id/textViewQuantite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:paddingHorizontal="8dp" />
+
+        <!-- Bouton pour augmenter la quantité -->
+        <Button
+            android:id="@+id/btnAugmenterQuantite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <!-- Bouton pour supprimer l'article du panier -->
+        <Button
+            android:id="@+id/btnSupprimerArticle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supprimer" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

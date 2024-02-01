@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "267183031722",
+    "project_id": "projetjocene-c04ce",
+    "storage_bucket": "projetjocene-c04ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267183031722:android:0c496a1e3fab92ab5e57d3",
+        "android_client_info": {
+          "package_name": "com.example.jocene"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqXbHJpy4pNNXybR4mPIQuONsSrKeBlP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
