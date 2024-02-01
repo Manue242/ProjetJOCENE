@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/shoppingbag"
+            android:icon="@drawable/shopping_1_svgrepo_com"
+            tools:ignore="MenuTitle" />
+
+        <item
+            android:id="@+id/comment"
+            android:icon="@drawable/comment_5_svgrepo_com"
+            tools:ignore="MenuTitle" />
+
+        <item
+            android:id="@+id/wish_list"
+            android:icon="@drawable/heart_svgrepo_com"
+            tools:ignore="MenuTitle" />
+
+        <item
+            android:id="@+id/user_profile"
+            android:icon="@drawable/user_svgrepo_com"
+            tools:ignore="MenuTitle" />
+
+</menu>
