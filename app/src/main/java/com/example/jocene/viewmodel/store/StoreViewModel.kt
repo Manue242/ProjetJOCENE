@@ -1,11 +1,11 @@
-package com.example.kleine.viewmodel.store
+package com.example.jocene.viewmodel.store
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.kleine.firebaseDatabase.FirebaseDb
-import com.example.kleine.model.Store
-import com.example.kleine.resource.Resource
+import com.example.jocene.firebaseDatabase.FirebaseDb
+import com.example.jocene.model.Store
+import com.example.jocene.resource.Resource
 
 class StoreViewModel(
     val firebaseDatabase: FirebaseDb

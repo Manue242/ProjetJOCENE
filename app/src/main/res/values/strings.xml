@@ -157,6 +157,9 @@
     <string name="help_text">Got a question? We\'re here to answer!</string>
     <string name="filtres">Filtres</string>
     <string name="organiser_selon">Organiser selon...</string>
+    <string name="_1600">$1600</string>
+    <string name="chair">Chair</string>
+    <string name="todo">TODO</string>
 
 
 </resources>

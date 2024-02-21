@@ -1,16 +1,16 @@
-package com.example.kleine.viewmodel.shopping
+package com.example.jocene.viewmodel.shopping
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.kleine.firebaseDatabase.FirebaseDb
-import com.example.kleine.model.*
-import com.example.kleine.resource.Resource
-import com.example.kleine.util.Constants.Companion.ACCESSORY_CATEGORY
-import com.example.kleine.util.Constants.Companion.CHAIR_CATEGORY
-import com.example.kleine.util.Constants.Companion.CUPBOARD_CATEGORY
-import com.example.kleine.util.Constants.Companion.FURNITURE_CATEGORY
-import com.example.kleine.util.Constants.Companion.TABLES_CATEGORY
+import com.example.jocene.firebaseDatabase.FirebaseDb
+import com.example.jocene.model.*
+import com.example.jocene.resource.Resource
+import com.example.jocene.util.Constants.Companion.ACCESSORY_CATEGORY
+import com.example.jocene.util.Constants.Companion.CHAIR_CATEGORY
+import com.example.jocene.util.Constants.Companion.CUPBOARD_CATEGORY
+import com.example.jocene.util.Constants.Companion.FURNITURE_CATEGORY
+import com.example.jocene.util.Constants.Companion.TABLES_CATEGORY
 import com.google.firebase.firestore.FirebaseFirestore
 import java.util.*
 

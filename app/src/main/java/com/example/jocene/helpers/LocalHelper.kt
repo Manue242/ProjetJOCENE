@@ -1,4 +1,4 @@
-package com.example.kleine.helpers
+package com.example.jocene.helpers
 
 import android.annotation.TargetApi
 import android.content.Context

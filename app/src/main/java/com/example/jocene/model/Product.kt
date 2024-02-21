@@ -1,10 +1,8 @@
 package com.example.jocene.model
 
+import android.os.Parcel
 import android.os.Parcelable
-import kotlinx.parcelize.Parcelize
-import kotlinx.parcelize.RawValue
-import java.util.*
-import kotlin.collections.HashMap
+import java.util.Date
 
 
 @Parcelize
@@ -26,7 +24,24 @@ data class Product(
 
 ) : Parcelable
     {
-    constructor(
+        constructor(parcel: Parcel) : this(
+            parcel.readInt(),
+            parcel.readString(),
+            parcel.readString(),
+            parcel.readString(),
+            parcel.readString(),
+            parcel.readString(),
+            parcel.readString(),
+            TODO("images"),
+            TODO("colors"),
+            TODO("sizes"),
+            parcel.readInt(),
+            TODO("offerTime"),
+            parcel.readString()
+        ) {
+        }
+
+        constructor(
          id :Int,
          title: String? = "",
          description: String? = "",
@@ -39,4 +54,30 @@ data class Product(
     ) : this(id,title,description,category,null,price,seller, images, colors, sizes,0,null,null)
 
     constructor():this(0,"","","","",null,null,null)
-}
+
+        override fun writeToParcel(parcel: Parcel, flags: Int) {
+            parcel.writeInt(id)
+            parcel.writeString(title)
+            parcel.writeString(description)
+            parcel.writeString(category)
+            parcel.writeString(newPrice)
+            parcel.writeString(price)
+            parcel.writeString(seller)
+            parcel.writeInt(orders)
+            parcel.writeString(sizeUnit)
+        }
+
+        override fun describeContents(): Int {
+            return 0
+        }
+
+        companion object CREATOR : Parcelable.Creator<Product> {
+            override fun createFromParcel(parcel: Parcel): Product {
+                return Product(parcel)
+            }
+
+            override fun newArray(size: Int): Array<Product?> {
+                return arrayOfNulls(size)
+            }
+        }
+    }

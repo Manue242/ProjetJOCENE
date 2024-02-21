@@ -1,8 +1,6 @@
 package com.example.jocene.model
 
 import android.os.Parcelable
-import kotlinx.parcelize.Parcelize
-import kotlinx.parcelize.RawValue
 
 @Parcelize
 data class CartProductsList(
@@ -11,3 +9,6 @@ data class CartProductsList(
 
 
 }
+
+@Target(AnnotationTarget.TYPE)
+annotation class RawValue

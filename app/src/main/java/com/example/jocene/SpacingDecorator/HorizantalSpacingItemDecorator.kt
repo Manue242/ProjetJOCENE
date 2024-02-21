@@ -1,10 +1,10 @@
-package com.example.kleine.SpacingDecorator
+package com.example.jocene.SpacingDecorator
 
 import android.graphics.Rect
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 
-class HorizantalSpacingItemDecorator(private val horizontalSpace:Int) : RecyclerView.ItemDecoration() {
+class HorizontalSpacingItemDecorator(private val horizontalSpace:Int) : RecyclerView.ItemDecoration() {
 
     override fun getItemOffsets(
         outRect: Rect,

@@ -1,4 +1,4 @@
-package com.example.kleine.adapters.recyclerview
+package com.example.jocen.adapters.recyclerview
 
 import android.annotation.SuppressLint
 import android.graphics.Color
@@ -10,9 +10,9 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.kleine.databinding.CartItemBinding
-import com.example.kleine.model.CartProduct
-import com.example.kleine.util.Constants.Companion.CART_FLAG
+import com.example.jocene.databinding.CartItemBinding
+import com.example.jocene.model.CartProduct
+import com.example.jocene.util.Constants.Companion.CART_FLAG
 
 class CartRecyclerAdapter(
     private val itemFlag: String = CART_FLAG

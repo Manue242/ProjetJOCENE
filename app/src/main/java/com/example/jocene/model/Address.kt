@@ -1,7 +1,6 @@
 package com.example.jocene.model
 
 import android.os.Parcelable
-import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Address(
@@ -14,3 +13,5 @@ data class Address(
 ) : Parcelable {
     constructor():this("","","","","","")
 }
+
+annotation class Parcelize

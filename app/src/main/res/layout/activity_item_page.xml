@@ -36,4 +36,12 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="186dp"
+        android:layout_height="226dp"
+        app:srcCompat="@drawable/test_image_cchair"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="186dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
