@@ -5,6 +5,15 @@
       <entry key="app">
         <State />
       </entry>
+      <entry key="contactInfoActivity">
+        <State />
+      </entry>
+      <entry key="deli_payMethodActivity">
+        <State />
+      </entry>
+      <entry key="emptyBagActivity">
+        <State />
+      </entry>
     </value>
   </component>
 </project>

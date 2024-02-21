@@ -26,5 +26,7 @@
     <string name="numCommande">N° de commande</string>
     <string name="wish">Liste d\'envies</string>
     <string name="emptyWishList">Votre liste d\'envies est vide</string>
+    <string name="moyenPaiement">Moyens de paiement</string>
+    <string name="moyenLivraison">Moyens de livraison</string>
 
 </resources>
