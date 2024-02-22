@@ -16,18 +16,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/baseline_arrow_back_24"
                 app:tint="@color/white"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                android:contentDescription="@string/todo" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Connexion"
+                android:text="@string/connexion"
                 android:textColor="@color/white"
                 android:textSize="22sp"/>
         </LinearLayout>
@@ -39,7 +41,7 @@
             android:layout_marginTop="50dp"
             android:gravity="center"
             android:padding="5dp"
-            android:text="JOCENE"
+            android:text="@string/jocene"
             android:textColor="@color/white"
             android:textSize="46sp" />
 
@@ -61,7 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:hint="Nom d'utilisateur"
+            android:hint="@string/nom_d_utilisateur"
             app:boxCornerRadiusBottomEnd="8dp"
             app:boxCornerRadiusTopEnd="8dp"
             app:boxCornerRadiusBottomStart="8dp"
@@ -87,7 +89,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:hint="Mot de passe"
+            android:hint="@string/mot_de_passe"
             app:boxCornerRadiusBottomEnd="8dp"
             app:boxCornerRadiusTopEnd="8dp"
             app:boxCornerRadiusBottomStart="8dp"
@@ -117,7 +119,7 @@
             android:layout_margin="20dp"
             app:backgroundTint="@color/button_color"
             android:padding="20dp"
-            android:text="Se connecter"
+            android:text="@string/se_connecter"
             android:textColor="@color/black"
             android:textSize="18sp"
             app:cornerRadius="30dp"
@@ -134,19 +136,22 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="Vous n'avez pas de compte?"
+                android:padding="10dp"
+                android:text="@string/vous_n_avez_pas_de_compte"
                 android:textColor="@color/black"
                 android:textSize="16sp"/>
 
             <TextView
+                android:id="@+id/Txt_Inscription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="Inscrivez-vous"
+                android:clickable="true"
+                android:padding="44dp"
+                android:text="@string/inscrivez_vous"
                 android:textColor="@color/button_color"
-                android:textSize="16sp"
-                android:textStyle="bold"/>
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:focusable="true" />
 
         </LinearLayout>
 
@@ -154,6 +159,6 @@
     </LinearLayout>
 
 
-    
+
 
 </RelativeLayout>

@@ -27,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Inscription"
+                android:text="@string/inscription"
                 android:textColor="@color/white"
                 android:textSize="22sp"/>
         </LinearLayout>
@@ -143,16 +143,18 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+            android:id="@+id/Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            app:backgroundTint="@color/button_color"
             android:padding="20dp"
-            android:text="s'inscrire"
+            android:text="@string/s_inscrire"
+            android:textAllCaps="true"
             android:textColor="@color/black"
             android:textSize="18sp"
+            app:backgroundTint="@color/button_color"
             app:cornerRadius="30dp"
-            android:textAllCaps="true"/>
+            android:onClick="register"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -166,7 +168,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Vous avez déjà un compte?"
+                android:text="@string/vous_avez_d_j_un_compte"
                 android:textColor="@color/black"
                 android:textSize="16sp"/>
 
@@ -174,7 +176,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Connectez-vous"
+                android:text="@string/connectez_vous"
                 android:textColor="@color/button_color"
                 android:textSize="16sp"
                 android:textStyle="bold"/>

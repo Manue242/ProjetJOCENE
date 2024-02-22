@@ -13,6 +13,9 @@
         android:theme="@style/Theme.JOCENE"
         tools:targetApi="31">
         <activity
+            android:name=".Coordonnees_Activity"
+            android:exported="false" />
+        <activity
             android:name=".Details_Activity"
             android:exported="false" />
         <activity
@@ -21,9 +24,7 @@
         <activity
             android:name=".Compte_Activity"
             android:exported="false" />
-        <activity
-            android:name=".Verification_code_Activity"
-            android:exported="false" />
+
         <activity
             android:name=".Favorite_Activity"
             android:exported="false" />
@@ -39,15 +40,11 @@
         <activity
             android:name=".Help_Activity"
             android:exported="false" />
-        <activity
-            android:name=".Activity_Mes_Commandes"
-            android:exported="false" />
+
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
-        <activity
-            android:name=".Register"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
