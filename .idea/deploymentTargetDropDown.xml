@@ -55,6 +55,14 @@
         <State />
       </entry>
       <entry key="paymentActivity">
+      </entry>
+      <entry key="contactInfoActivity">
+        <State />
+      </entry>
+      <entry key="deli_payMethodActivity">
+        <State />
+      </entry>
+      <entry key="emptyBagActivity">
         <State />
       </entry>
     </value>

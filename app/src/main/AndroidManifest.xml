@@ -15,7 +15,7 @@
         tools:targetApi="34">
         <activity
             android:name=".savedItemActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".noSavedItemActivity"
             android:exported="true" />
