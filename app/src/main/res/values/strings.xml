@@ -1,5 +1,19 @@
 <resources>
     <string name="app_name">JOCENE</string>
+
+    <string name="connexion">Connexion</string>
+    <string name="jocene">JOCENE</string>
+    <string name="nom_d_utilisateur">Nom d\'utilisateur</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="vous_n_avez_pas_de_compte">Vous n\'avez pas de compte?</string>
+    <string name="inscrivez_vous">Inscrivez-vous</string>
+    <string name="inscription">Inscription</string>
+    <string name="s_inscrire">s\'inscrire</string>
+    <string name="vous_avez_d_j_un_compte">Vous avez déjà un compte?</string>
+    <string name="connectez_vous">Connectez-vous</string>
+    <string name="todo">TODO</string>
+=======
     <string name="str_startShopping">Commencez vos achats</string>
     <string name="txt_emptybag">Votre panier est vide</string>
     <string name="cart">Panier</string>

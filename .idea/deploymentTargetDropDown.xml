@@ -10,11 +10,19 @@
               <deviceKey>
                 <Key>
                   <type value="VIRTUAL_DEVICE_PATH" />
+
+                  <value value="C:\Users\Admin\.android\avd\Pixel_7_API_30.avd" />
+
                   <value value="C:\Users\pc\.android\avd\pixel_3a_pie_9_0_-_api_28.avd" />
+
                 </Key>
               </deviceKey>
             </Target>
           </targetSelectedWithDropDown>
+
+          <timeTargetWasSelectedWithDropDown value="2024-02-21T21:06:25.086420600Z" />
+        </State>
+
           <timeTargetWasSelectedWithDropDown value="2024-01-16T14:53:35.903081600Z" />
           <targetsSelectedWithDialog>
             <Target>
@@ -64,6 +72,7 @@
       </entry>
       <entry key="emptyBagActivity">
         <State />
+
       </entry>
     </value>
   </component>

@@ -41,6 +41,39 @@
             android:name=".emptyBagActivity"
             android:exported="true" />
         <activity
+            android:name=".Coordonnees_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Details_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Help2_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Compte_Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Favorite_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Ignorer_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Help1_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MesCommandes_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Help_Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
