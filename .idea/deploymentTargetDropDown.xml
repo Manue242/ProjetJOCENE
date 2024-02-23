@@ -18,6 +18,15 @@
           <timeTargetWasSelectedWithDropDown value="2024-02-06T13:20:26.055105700Z" />
         </State>
       </entry>
+      <entry key="contactInfoActivity">
+        <State />
+      </entry>
+      <entry key="deli_payMethodActivity">
+        <State />
+      </entry>
+      <entry key="emptyBagActivity">
+        <State />
+      </entry>
     </value>
   </component>
 </project>
