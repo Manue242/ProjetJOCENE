@@ -14,15 +14,6 @@
         android:theme="@style/Theme.JOCENE"
         tools:targetApi="34">
         <activity
-            android:name=".SearchActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ItemPageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CategoryDisplayActivity"
-            android:exported="false" />
-        <activity
             android:name=".savedItemActivity"
             android:exported="false" />
         <activity
