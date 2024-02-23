@@ -5,4 +5,7 @@
     <color name="app_color">#FFC107</color>
     <color name="button_color">#FFC107</color>
     <color name="icon_color">#9E9E9E</color>
+
+    <color name="_000000">#000000</color>
+
 </resources>

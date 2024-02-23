@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".deli_payMethodActivity"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/vec_arrowBack2.2"
+        android:layout_width="58dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+
+    <Button
+        android:id="@+id/btn_continuer2.2"
+        style="@style/Widget.MaterialComponents.TimePicker.Button"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="@string/txt_cotinue"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="167dp"
+        android:text="@string/moyenLivraison"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="32dp"
+        app:layout_constraintTop_toBottomOf="@id/textDelivery">
+
+        <LinearLayout
+            android:id="@+id/linearPickup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Logo pour l'option Retrait en magasin -->
+            <ImageView
+                android:id="@+id/imagePickup"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icons8_boutique_50" />
+
+            <!-- RadioButton pour l'option Retrait en magasin -->
+            <RadioButton
+                android:id="@+id/radioPickup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Retrait en magasin"
+                android:textSize="16sp" /> <!-- Ajustez la marge selon vos besoins -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearDelivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Logo pour l'option Livraison -->
+            <ImageView
+                android:id="@+id/imageDelivery"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icons8_livraison_50" />
+
+            <!-- RadioButton pour l'option Livraison à domicile -->
+            <RadioButton
+                android:id="@+id/radioDelivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Livraison à domicile"
+                android:textSize="16sp" /> <!-- Ajustez la marge selon vos besoins -->
+
+        </LinearLayout>
+
+    </RadioGroup>
+
+    <!-- Choix du moyen de paiement -->
+
+
+    <TextView
+        android:id="@+id/textPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/moyenPaiement"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewadr" />
+
+    <ImageView
+        android:id="@+id/arrowDeliveryAdr"
+        android:layout_width="32dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="32dp"
+        android:clickable="true"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewadr"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPayment"
+        android:layout_width="180dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textPayment">
+
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <!-- Logo pour l'option Carte bancaire -->
+            <ImageView
+                android:id="@+id/imagecard"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/logocard" />
+
+            <RadioButton
+                android:id="@+id/radioCard"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:text="Carte bancaire"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" /> <!-- Ajustez la marge selon vos besoins -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Logo pour l'option PayPal -->
+            <ImageView
+                android:id="@+id/imagePaypal"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icons8_paypal" />
+
+            <!-- RadioButton pour l'option PayPal -->
+            <RadioButton
+                android:id="@+id/radioPaypal"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="PayPal"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" /> <!-- Ajustez la marge selon vos besoins -->
+
+        </LinearLayout>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewadr"
+        android:layout_width="337dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginEnd="20dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

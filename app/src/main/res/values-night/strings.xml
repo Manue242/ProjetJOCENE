@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JOCENE</string>
+    <string name="str_startShopping">Commencez vos achats</string>
+    <string name="txt_emptybag">Votre panier est vide</string>
+    <string name="cart">Panier</string>
+    <string name="totalprice" >00000$</string>
+    <string name="total">Sous-total :</string>
+    <string name="order">Commander</string>
+    <string name="contactInfo">Adresse de facturation</string>
+    <string name="txt_cotinue">Continuer</string>
+    <string name="nameFacturation">Nom complet</string>
+    <string name="phoneFacturation">Télephone</string>
+    <string name="emailFacturation">Email </string>
+    <string name="seeOrders">Voir mes commandes</string>
+    <string name="orderPlaced">Votre commande a été bien enregistrée</string>
+    <string name="deliveryAdress">Adresse de livraison</string>
+    <string name="txt_adress">Adresse</string>
+    <string name="cancel">Annuler</string>
+    <string name="pay">Payer</string>
+    <string name="numeroCarte">NUMERO DE CARTE</string>
+    <string name="dateEx">DATE D\'EXPIRATION</string>
+    <string name="CVV">CVV</string>
+    <string name="retenir_carte">Retenir cette carte pour les utilisations futures</string>
+    <string name="reduction">Réduction</string>
+    <string name="fraisLivraison">Frais de livraison</string>
+    <string name="numCommande">N° de commande</string>
+    <string name="wish">Liste d\'envies</string>
+    <string name="emptyWishList">Votre liste d\'envies est vide</string>
+    <string name="moyenPaiement">Moyens de paiement</string>
+    <string name="moyenLivraison">Moyens de livraison</string>
+</resources>

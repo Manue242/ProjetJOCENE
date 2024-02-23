@@ -12,11 +12,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         val inscrire: TextView = findViewById(R.id.Txt_Inscription)
         inscrire.setOnClickListener {
             val intent = Intent( this, RegisterActivity::class.java)
             startActivity(intent)
         }
+
+=======
 
     }
 
