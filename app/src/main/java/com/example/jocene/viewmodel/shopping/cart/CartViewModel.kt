@@ -1,11 +1,11 @@
-package com.example.jocene.viewmodel.shopping.cart
+package com.example.kleine.viewmodel.shopping.cart
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.jocene.firebaseDatabase.FirebaseDb
-import com.example.jocene.model.CartProduct
-import com.example.jocene.model.Product
-import com.example.jocene.resource.Resource
+import com.example.kleine.firebaseDatabase.FirebaseDb
+import com.example.kleine.model.CartProduct
+import com.example.kleine.model.Product
+import com.example.kleine.resource.Resource
 
 class CartViewModel(
 ) : ViewModel() {

@@ -1,4 +1,4 @@
-package com.example.jocene.adapters.recyclerview
+package com.example.kleine.adapters.recyclerview
 
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
@@ -9,9 +9,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.example.jocene.R
-import com.example.jocene.databinding.ColorAndSizesBinding
-import com.example.jocene.util.Constants.Companion.COLORS_TYPE
+import com.example.kleine.R
+import com.example.kleine.databinding.ColorAndSizesBinding
+import com.example.kleine.util.Constants.Companion.COLORS_TYPE
 
 class ColorsAndSizesAdapter(var type: String = COLORS_TYPE) :
     RecyclerView.Adapter<ColorsAndSizesAdapter.ColorsAndSizesAdapterViewHolder>() {

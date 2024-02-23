@@ -1,4 +1,4 @@
-package com.example.jocene.resource
+package com.example.kleine.resource
 
 sealed class Resource<T>(
     val data :T?=null,
@@ -9,4 +9,3 @@ sealed class Resource<T>(
     class Error<T>(message: String?) : Resource<T>(null,message)
     class Loading<T> : Resource<T>()
 }
-

@@ -1,16 +1,17 @@
-package com.example.jocene.viewmodel.lunchapp
+package com.example.kleine.viewmodel.lunchapp
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.jocene.firebaseDatabase.FirebaseDb
-import com.example.jocene.model.User
-import com.example.jocene.resource.Resource
+import com.example.kleine.firebaseDatabase.FirebaseDb
+import com.example.kleine.model.User
+import com.example.kleine.resource.Resource
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 
-class JoceneViewModel(
+class KleineViewModel(
     private val firebaseDatabase: FirebaseDb
 ) : ViewModel() {
 

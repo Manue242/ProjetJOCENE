@@ -49,7 +49,7 @@ class Constants {
         const val SIZES_TYPE = "sizes"
 
         const val PRODUCT_FLAG = "from_product_click"
-        const val CART_FLAG = "from_cart_click"
+        const val CART_FLAG = "from_cart_clicl"
         const val UPDATE_ADDRESS_FLAG = "update"
         const val SELECT_ADDRESS_FLAG = "select"
         const val STORES_COLLECTION = "stores"

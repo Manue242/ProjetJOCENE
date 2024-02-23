@@ -1,4 +1,4 @@
-package com.example.jocene.SpacingDecorator
+package com.example.kleine.SpacingDecorator
 
 import android.graphics.Rect
 import android.view.View

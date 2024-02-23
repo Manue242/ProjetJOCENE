@@ -1,4 +1,4 @@
-package com.example.jocene.adapters.recyclerview
+package com.example.kleine.adapters.recyclerview
 
 import android.annotation.SuppressLint
 import android.graphics.Paint
@@ -11,9 +11,9 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.jocene.databinding.ProductItemBinding
-import com.example.jocene.model.Product
-import com.example.jocene.util.Constants.Companion.IMAGES
+import com.example.kleine.databinding.ProductItemBinding
+import com.example.kleine.model.Product
+import com.example.kleine.util.Constants.Companion.IMAGES
 
 class ProductsRecyclerAdapter() :
     RecyclerView.Adapter<ProductsRecyclerAdapter.BestProductsRecyclerAdapterViewHolder>() {

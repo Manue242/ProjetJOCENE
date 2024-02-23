@@ -1,5 +1,8 @@
 package com.example.jocene.model
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
 data class CartProduct (
     val id:Int,
     val name:String,

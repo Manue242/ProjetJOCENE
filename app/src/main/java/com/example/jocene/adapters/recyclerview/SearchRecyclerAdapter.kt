@@ -1,13 +1,13 @@
-package com.example.jocene.adapters.recyclerview
+package com.example.kleine.adapters.recyclerview
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.example.jocene.databinding.RecyclerviewSearchItemBinding
-import com.example.jocene.model.Category
-import com.example.jocene.model.Product
+import com.example.kleine.databinding.RecyclerviewSearchItemBinding
+import com.example.kleine.model.Category
+import com.example.kleine.model.Product
 
 class SearchRecyclerAdapter : RecyclerView.Adapter<SearchRecyclerAdapter.SearchViewHolder>() {
     var onItemClick: ((Product) -> Unit)? = null

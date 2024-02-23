@@ -1,13 +1,13 @@
-package com.example.jocene.viewmodel.billing
+package com.example.kleine.viewmodel.billing
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.jocene.firebaseDatabase.FirebaseDb
-import com.example.jocene.model.Address
-import com.example.jocene.model.CartProduct
-import com.example.jocene.model.Order
-import com.example.jocene.resource.Resource
-import com.example.jocene.util.Constants.Companion.ORDER_PLACED_STATE
+import com.example.kleine.firebaseDatabase.FirebaseDb
+import com.example.kleine.model.Address
+import com.example.kleine.model.CartProduct
+import com.example.kleine.model.Order
+import com.example.kleine.resource.Resource
+import com.example.kleine.util.Constants.Companion.ORDER_PLACED_STATE
 import java.util.*
 import kotlin.random.Random
 
