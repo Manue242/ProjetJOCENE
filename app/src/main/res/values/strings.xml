@@ -160,6 +160,8 @@
     <string name="_1600">$1600</string>
     <string name="chair">Chair</string>
     <string name="todo">TODO</string>
+    <string name="default_web_client_id">JorootCene</string>
+    <string name="g_app_name">Jocene\n</string>
 
 
 </resources>

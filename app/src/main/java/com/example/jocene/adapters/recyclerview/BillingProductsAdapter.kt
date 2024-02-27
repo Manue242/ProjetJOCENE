@@ -1,4 +1,4 @@
-package com.example.kleine.adapters.recyclerview
+package com.example.jocene.adapters.recyclerview
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -9,9 +9,8 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.kleine.R
-import com.example.kleine.databinding.CartItemBinding
-import com.example.kleine.model.CartProduct
+import com.example.jocene.databinding.CartItemBinding
+import com.example.jocene.model.CartProduct
 
 class BillingProductsAdapter(): RecyclerView.Adapter<BillingProductsAdapter.BillingProductsAdapterViewHolder>() {
 

@@ -5,11 +5,9 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -18,13 +16,10 @@ import com.example.jocene.R
 import com.example.jocene.SpacingDecorator.HorizontalSpacingItemDecorator
 import com.example.jocene.activities.ShoppingActivity
 import com.example.jocene.adapters.recyclerview.ProductsRecyclerAdapter
-import com.example.jocene.databinding.FragmentChairBinding
 import com.example.jocene.databinding.FragmentTableBinding
-import com.example.jocene.firebaseDatabase.FirebaseDb
 import com.example.jocene.resource.Resource
 import com.example.jocene.util.Constants
 import com.example.jocene.viewmodel.shopping.ShoppingViewModel
-import com.example.jocene.viewmodel.shopping.ShoppingViewModelProviderFactory
 
 class TableFragment : Fragment(R.layout.fragment_table) {
     val TAG = "TableFragment"
@@ -85,7 +80,7 @@ class TableFragment : Fragment(R.layout.fragment_table) {
 
     private fun productsPaging() {
         binding.scrollCupboard.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { v, scrollX, scrollY, oldScrollX, oldScrollY ->
-            if (v!!.getChildAt(0).bottom <= (v.height + scrollY)) {
+            if (v.getChildAt(0).bottom <= (v.height + scrollY)) {
                 viewModel.getTables(productsAdapter.differ.currentList.size)
             }
         })
@@ -178,7 +173,7 @@ class TableFragment : Fragment(R.layout.fragment_table) {
         binding.rvHeader.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             adapter = headerAdapter
-            addItemDecoration(HorizantalSpacingItemDecorator(100))
+            addItemDecoration(HorizontalSpacingItemDecorator(100))
         }
     }
 

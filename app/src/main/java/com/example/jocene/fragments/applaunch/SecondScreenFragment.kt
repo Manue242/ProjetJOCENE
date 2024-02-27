@@ -1,15 +1,13 @@
-package com.example.kleine.fragments.applunch
+package com.example.jocene.fragments.applunch
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
-import com.example.kleine.R
-import com.example.kleine.databinding.FragmentSecondScreenBinding
+import com.example.jocene.R
+import com.example.jocene.databinding.FragmentSecondScreenBinding
 
 class SecondScreenFragment: Fragment() {
     private lateinit var binding: FragmentSecondScreenBinding

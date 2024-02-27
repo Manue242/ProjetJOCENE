@@ -1,33 +1,33 @@
-package com.example.kleine.fragments.applunch
+package com.example.jocene.fragments.applaunch
 
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
-import br.com.simplepass.loadingbutton.customViews.CircularProgressButton
-import com.example.kleine.activities.LunchActivity
-import com.example.kleine.R
-import com.example.kleine.databinding.FragmentRegisterBinding
-import com.example.kleine.model.User
-import com.example.kleine.resource.Resource
-import com.example.kleine.viewmodel.lunchapp.KleineViewModel
+import com.example.jocene.R
+import com.example.jocene.activities.LaunchActivity
+import com.example.jocene.databinding.FragmentRegisterBinding
+import com.example.jocene.model.User
+import com.example.jocene.resource.Resource
+import com.example.jocene.viewmodel.launchapp.JoceneViewModel
+import com.github.leandroborgesferreira.loadingbutton.customViews.CircularProgressButton
 
 private const val TAG = "RegisterFragment"
 
 class RegisterFragment : Fragment() {
 
     private lateinit var binding: FragmentRegisterBinding
-    lateinit var viewModel: KleineViewModel
+    lateinit var viewModel: JoceneViewModel
     lateinit var btnRegister: CircularProgressButton
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        viewModel = (activity as LunchActivity).viewModel
+        viewModel = (activity as LaunchActivity).viewModel
     }
 
     override fun onCreateView(

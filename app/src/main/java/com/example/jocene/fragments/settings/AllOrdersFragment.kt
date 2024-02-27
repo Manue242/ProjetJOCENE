@@ -1,20 +1,20 @@
-package com.example.kleine.fragments.settings
+package com.example.jocene.fragments.settings
 
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.kleine.R
-import com.example.kleine.activities.ShoppingActivity
-import com.example.kleine.adapters.recyclerview.AllOrdersAdapter
-import com.example.kleine.databinding.FragmentAllOrdersBinding
-import com.example.kleine.resource.Resource
-import com.example.kleine.viewmodel.shopping.ShoppingViewModel
+import com.example.jocene.R
+import com.example.jocene.activities.ShoppingActivity
+import com.example.jocene.adapters.recyclerview.AllOrdersAdapter
+import com.example.jocene.databinding.FragmentAllOrdersBinding
+import com.example.jocene.resource.Resource
+import com.example.jocene.viewmodel.shopping.ShoppingViewModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 

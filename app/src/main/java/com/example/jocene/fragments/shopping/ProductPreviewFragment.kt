@@ -1,4 +1,4 @@
-package com.example.kleine.fragments.shopping
+package com.example.jocene.fragments.shopping
 
 import android.annotation.SuppressLint
 import android.graphics.Paint
@@ -12,24 +12,25 @@ import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.kleine.R
-import com.example.kleine.SpacingDecorator.HorizantalSpacingItemDecorator
-import com.example.kleine.activities.ShoppingActivity
-import com.example.kleine.adapters.recyclerview.ColorsAndSizesAdapter
-import com.example.kleine.adapters.viewpager.ViewPager2Images
-import com.example.kleine.databinding.FragmentProductPreviewBinding
-import com.example.kleine.model.CartProduct
-import com.example.kleine.model.Product
-import com.example.kleine.resource.Resource
-import com.example.kleine.util.Constants.Companion.COLORS
-import com.example.kleine.util.Constants.Companion.COLORS_TYPE
-import com.example.kleine.util.Constants.Companion.IMAGES
-import com.example.kleine.util.Constants.Companion.PRODUCT_FLAG
-import com.example.kleine.util.Constants.Companion.SIZES
-import com.example.kleine.util.Constants.Companion.SIZES_TYPE
-import com.example.kleine.viewmodel.shopping.ShoppingViewModel
+import com.example.jocene.R
+import com.example.jocene.SpacingDecorator.HorizontalSpacingItemDecorator
+import com.example.jocene.activities.ShoppingActivity
+import com.example.jocene.adapters.recyclerview.ColorsAndSizesAdapter
+import com.example.jocene.adapters.viewpager.ViewPager2Images
+import com.example.jocene.databinding.FragmentProductPreviewBinding
+import com.example.jocene.model.CartProduct
+import com.example.jocene.model.Product
+import com.example.jocene.resource.Resource
+import com.example.jocene.util.Constants.Companion.COLORS
+import com.example.jocene.util.Constants.Companion.COLORS_TYPE
+import com.example.jocene.util.Constants.Companion.IMAGES
+import com.example.jocene.util.Constants.Companion.PRODUCT_FLAG
+import com.example.jocene.util.Constants.Companion.SIZES
+import com.example.jocene.util.Constants.Companion.SIZES_TYPE
+import com.example.jocene.viewmodel.shopping.ShoppingViewModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import io.github.vejei.viewpagerindicator.indicator.CircleIndicator
+import me.relex.circleindicator.CircleIndicator
 
 class ProductPreviewFragment : Fragment() {
 
@@ -216,7 +217,7 @@ class ProductPreviewFragment : Fragment() {
         binding.rvSizes.apply {
             adapter = sizesAdapter
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            addItemDecoration(HorizantalSpacingItemDecorator(45))
+            addItemDecoration(HorizontalSpacingItemDecorator(45))
         }
     }
 
@@ -224,7 +225,7 @@ class ProductPreviewFragment : Fragment() {
         binding.rvColors.apply {
             adapter = colorsAdapter
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            addItemDecoration(HorizantalSpacingItemDecorator(45))
+            addItemDecoration(HorizontalSpacingItemDecorator(45))
         }
     }
 

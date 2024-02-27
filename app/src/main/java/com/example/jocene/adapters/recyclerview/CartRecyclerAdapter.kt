@@ -1,4 +1,4 @@
-package com.example.jocen.adapters.recyclerview
+package com.example.jocene.adapters.recyclerview
 
 import android.annotation.SuppressLint
 import android.graphics.Color
@@ -6,6 +6,7 @@ import android.graphics.drawable.ColorDrawable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -15,7 +16,8 @@ import com.example.jocene.model.CartProduct
 import com.example.jocene.util.Constants.Companion.CART_FLAG
 
 class CartRecyclerAdapter(
-    private val itemFlag: String = CART_FLAG
+    private val itemFlag: String = CART_FLAG,
+    val imgCartProduct: ImageView
 ) : RecyclerView.Adapter<CartRecyclerAdapter.CartRecyclerAdapterViewHolder>() {
 
     var onPlusClick: ((CartProduct) -> Unit)? = null

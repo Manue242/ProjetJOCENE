@@ -1,4 +1,4 @@
-package com.example.jocene.viewmodel.lunchapp
+package com.example.jocene.viewmodel.launchapp
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -10,26 +10,30 @@ import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
+
+
 class JoceneViewModel(
-    private val firebaseDatabase: FirebaseDb
+    private val firebaseDatabase: FirebaseDb,
+    private val firebaseAuth: FirebaseAuth,
+    private val db: FirebaseDb
 ) : ViewModel() {
 
 
-    val saveUserInformationGoogleSignIn = MutableLiveData<Resource<String>>()
-    val register = MutableLiveData<Resource<User>>()
+    val saveUserInformationGoogleSignIn: MutableLiveData<Resource<String>>
+    val register: MutableLiveData<Resource<User>>
 
 
-    val login = MutableLiveData<Boolean>()
-    val loginError = MutableLiveData<String>()
+    val login: MutableLiveData<Boolean>
+    val loginError: MutableLiveData<String>
 
-    val resetPassword = MutableLiveData<Resource<String>>()
+    val resetPassword: MutableLiveData<Resource<String>>
 
     fun registerNewUser(
         user: User,
         password: String
     ) {
         register.postValue(Resource.Loading())
-        firebaseDatabase.createNewUser(user.email, password).addOnCompleteListener {
+        firebaseDatabase.createNewUser(user.email!!, password).addOnCompleteListener {
             if (it.isSuccessful)
                 firebaseDatabase.saveUserInformation(Firebase.auth.currentUser!!.uid, user)
                     .addOnCompleteListener { it2 ->
@@ -48,7 +52,7 @@ class JoceneViewModel(
         userUid: String,
         user: User
     ) {
-        firebaseDatabase.checkUserByEmail(user.email) { error, isAccountExisted ->
+        firebaseDatabase.checkUserByEmail(user.email!!) { error, isAccountExisted ->
             if (error != null)
                 saveUserInformationGoogleSignIn.postValue(Resource.Error(error))
             else
@@ -117,9 +121,15 @@ class JoceneViewModel(
     }
 
     fun isUserSignedIn() : Boolean {
-        if (FirebaseAuth.getInstance().currentUser?.uid != null)
-            return true
-        return false
+        return FirebaseAuth.getInstance().currentUser?.uid != null
 
+    }
+
+    init {
+        this.saveUserInformationGoogleSignIn = MutableLiveData<Resource<String>>()
+        this.register = MutableLiveData<Resource<User>>()
+        this.login = MutableLiveData<Boolean>()
+        this.loginError = MutableLiveData<String>()
+        this.resetPassword = MutableLiveData<Resource<String>>()
     }
 }

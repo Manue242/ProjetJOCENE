@@ -1,4 +1,4 @@
-package com.example.jocene.fragments.applunch
+package com.example.jocene.fragments.applaunch
 
 import android.content.Context
 import android.os.Bundle
@@ -11,8 +11,13 @@ import com.example.jocene.R
 import com.example.jocene.databinding.FragmentFirstScreenBinding
 import com.example.jocene.util.Constants.Companion.SHOULD_SHOW
 import com.example.jocene.util.Constants.Companion.SPLASH_SHARED_PREF
+import com.example.jocene.viewmodel.shopping.ShoppingViewModel
 
 class FirstScreenFragment : Fragment() {
+    val TAG = "FirstScreenFragment"
+    private lateinit var viewModel: ShoppingViewModel
+    
+
     private lateinit var binding: FragmentFirstScreenBinding
     override fun onCreateView(
         inflater: LayoutInflater,

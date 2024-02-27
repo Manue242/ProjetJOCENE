@@ -17,8 +17,7 @@ data class Order(
         TODO("date"),
         parcel.readString().toString(),
         parcel.readString().toString()
-    ) {
-    }
+    )
 
     constructor():this("",Date(),"","")
 

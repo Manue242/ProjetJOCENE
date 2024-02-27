@@ -1,4 +1,4 @@
-package com.example.kleine.fragments.settings
+package com.example.jocene.fragments.settings
 
 import android.content.Intent
 import android.net.Uri
@@ -8,9 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.kleine.R
-import com.example.kleine.databinding.FragmentHelpBinding
-import com.example.kleine.databinding.FragmentProfileBinding
+import com.example.jocene.R
+import com.example.jocene.databinding.FragmentHelpBinding
+import com.example.jocene.databinding.FragmentProfileBinding
 
 class HelpFragment : Fragment(R.layout.fragment_help) {
     private lateinit var binding:FragmentHelpBinding

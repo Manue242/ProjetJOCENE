@@ -1,25 +1,25 @@
-package com.example.kleine.fragments.shopping
+package com.example.jocene.fragments.shopping
 
+import android.arch.lifecycle.extensions.BuildConfig
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.coordinatorlayout.widget.CoordinatorLayout
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
-import com.example.kleine.BuildConfig
-import com.example.kleine.R
-import com.example.kleine.activities.LunchActivity
-import com.example.kleine.activities.ShoppingActivity
-import com.example.kleine.databinding.FragmentProfileBinding
-import com.example.kleine.model.User
-import com.example.kleine.resource.Resource
-import com.example.kleine.util.Constants.Companion.UPDATE_ADDRESS_FLAG
-import com.example.kleine.viewmodel.shopping.ShoppingViewModel
+import com.example.jocene.R
+import com.example.jocene.activities.LaunchActivity
+import com.example.jocene.activities.ShoppingActivity
+import com.example.jocene.databinding.FragmentProfileBinding
+import com.example.jocene.model.User
+import com.example.jocene.resource.Resource
+import com.example.jocene.util.Constants.Companion.UPDATE_ADDRESS_FLAG
+import com.example.jocene.viewmodel.shopping.ShoppingViewModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
@@ -163,7 +163,7 @@ class ProfileFragment : Fragment() {
 
         binding.linearOut.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
-            val intent = Intent(context, LunchActivity::class.java)
+            val intent = Intent(context, LaunchActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
         }

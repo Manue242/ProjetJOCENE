@@ -1,12 +1,11 @@
 package com.example.jocene.helpers
 
-import android.annotation.TargetApi
 import android.content.Context
 import android.content.res.Configuration
 import android.content.res.Resources
 import android.os.Build
 import android.preference.PreferenceManager
-import java.util.*
+import java.util.Locale
 
 
 internal object LocaleHelper {
@@ -32,7 +31,6 @@ internal object LocaleHelper {
 
     // the method is used update the language of application by creating
     // object of inbuilt Locale class and passing language argument to it
-    @TargetApi(Build.VERSION_CODES.N)
     private fun updateResources(context: Context, language: String): Context {
         val locale = Locale(language)
         Locale.setDefault(locale)
@@ -48,9 +46,7 @@ internal object LocaleHelper {
         val resources: Resources = context.getResources()
         val configuration: Configuration = resources.getConfiguration()
         configuration.locale = locale
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
-            configuration.setLayoutDirection(locale)
-        }
+        configuration.setLayoutDirection(locale)
         resources.updateConfiguration(configuration, resources.getDisplayMetrics())
         return context
     }

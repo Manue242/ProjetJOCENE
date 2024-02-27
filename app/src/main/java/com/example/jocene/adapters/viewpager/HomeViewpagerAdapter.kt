@@ -1,4 +1,4 @@
-package com.example.kleine.adapters.viewpager
+package com.example.jocene.adapters.viewpager
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -17,6 +17,7 @@ class HomeViewpagerAdapter(
     override fun createFragment(position: Int): Fragment {
         return fragments[position]
     }
+
 
 
 }

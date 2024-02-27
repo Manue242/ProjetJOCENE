@@ -1,17 +1,14 @@
-package com.example.kleine.adapters.recyclerview
+package com.example.jocene.adapters.recyclerview
 
-import android.graphics.Color
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.example.kleine.R
-import com.example.kleine.databinding.RecyclerviewShippingItemBinding
-import com.example.kleine.model.Address
-import com.example.kleine.util.Constants.Companion.SELECT_ADDRESS_FLAG
+import com.example.jocene.R
+import com.example.jocene.databinding.RecyclerviewShippingItemBinding
+import com.example.jocene.model.Address
+import com.example.jocene.util.Constants.Companion.SELECT_ADDRESS_FLAG
 
 class ShippingAddressesAdapter(
     val ADDRESS_CLICK_FLAG : String

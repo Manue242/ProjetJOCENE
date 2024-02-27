@@ -1,29 +1,30 @@
-package com.example.kleine.fragments.settings
+package com.example.jocene.fragments.settings
 
 import android.os.Bundle
+import android.support.transition.TransitionManager.go
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import android.widget.Toast
+import androidx.constraintlayout.motion.widget.Debug.getState
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.kleine.R
-import com.example.kleine.SpacingDecorator.VerticalSpacingItemDecorator
-import com.example.kleine.activities.ShoppingActivity
-import com.example.kleine.adapters.recyclerview.CartRecyclerAdapter
-import com.example.kleine.databinding.FragmentOrderDetailsBinding
-import com.example.kleine.model.Address
-import com.example.kleine.resource.Resource
-import com.example.kleine.util.Constants.Companion.ORDER_CONFIRM_STATE
-import com.example.kleine.util.Constants.Companion.ORDER_Delivered_STATE
-import com.example.kleine.util.Constants.Companion.ORDER_PLACED_STATE
-import com.example.kleine.util.Constants.Companion.ORDER_SHIPPED_STATE
-import com.example.kleine.viewmodel.shopping.ShoppingViewModel
+import com.example.jocene.R
+import com.example.jocene.SpacingDecorator.VerticalSpacingItemDecorator
+import com.example.jocene.activities.ShoppingActivity
+import com.example.jocene.adapters.recyclerview.CartRecyclerAdapter
+import com.example.jocene.databinding.FragmentOrderDetailsBinding
+import com.example.jocene.resource.Resource
+import com.example.jocene.util.Constants.Companion.ORDER_CONFIRM_STATE
+import com.example.jocene.util.Constants.Companion.ORDER_Delivered_STATE
+import com.example.jocene.util.Constants.Companion.ORDER_PLACED_STATE
+import com.example.jocene.util.Constants.Companion.ORDER_SHIPPED_STATE
+import com.example.jocene.viewmodel.shopping.ShoppingViewModel
+import com.example.jocene.fragments.settings.OrderDetailsArgs
 
 class OrderDetails : Fragment() {
     val TAG = "OrderDetails"
@@ -118,7 +119,7 @@ class OrderDetails : Fragment() {
     }
 
     private fun setupRecyclerview() {
-        productsAdapter = CartRecyclerAdapter("From Order Detail")
+        productsAdapter = CartRecyclerAdapter("From Order Detail",)
         binding.rvProducts.apply {
             adapter = productsAdapter
             layoutManager = LinearLayoutManager(context)

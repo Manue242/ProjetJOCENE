@@ -44,6 +44,7 @@ class ShoppingActivity : AppCompatActivity() {
     }
 
 
+
     private fun observeCartProductsCount(bottomNavigation: BottomNavigationView) {
 
         cartViewModel.cartItemsCount.observe(this, Observer { response ->

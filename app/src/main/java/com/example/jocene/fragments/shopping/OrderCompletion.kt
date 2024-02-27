@@ -1,16 +1,17 @@
-package com.example.kleine.fragments.shopping
+package com.example.jocene.fragments.shopping
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.example.kleine.R
-import com.example.kleine.databinding.FragmentOrderCompletionBinding
-import com.example.kleine.util.Constants.Companion.ORDER_FAILED_FLAG
-import com.example.kleine.util.Constants.Companion.ORDER_SUCCESS_FLAG
+import com.example.jocene.R
+import com.example.jocene.databinding.FragmentOrderCompletionBinding
+import com.example.jocene.util.Constants.Companion.ORDER_FAILED_FLAG
+import com.example.jocene.util.Constants.Companion.ORDER_SUCCESS_FLAG
+import com.example.kleine.fragments.shopping.OrderCompletionArgs
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class OrderCompletion : Fragment() {

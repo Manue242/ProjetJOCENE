@@ -5,7 +5,6 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -174,7 +173,7 @@ class CupboardFragment : Fragment(R.layout.fragment_cupboard) {
         binding.rvHeader.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             adapter = mostOrderedCupboardsAdapter
-            addItemDecoration(HorizantalSpacingItemDecorator(100))
+            addItemDecoration(HorizontalSpacingItemDecorator(100))
         }
     }
 

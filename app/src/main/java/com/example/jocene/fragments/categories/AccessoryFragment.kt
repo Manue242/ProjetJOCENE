@@ -5,11 +5,9 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -17,16 +15,16 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.jocene.R
 import com.example.jocene.SpacingDecorator.HorizontalSpacingItemDecorator
 import com.example.jocene.activities.ShoppingActivity
+import com.example.jocene.adapters.recyclerview.ProductsRecyclerAdapter
 import com.example.jocene.databinding.FragmentAccessoryBinding
-import com.example.jocene.databinding.FragmentTableBinding
-import com.example.jocene.firebaseDatabase.FirebaseDb
 import com.example.jocene.resource.Resource
 import com.example.jocene.util.Constants
 import com.example.jocene.viewmodel.shopping.ShoppingViewModel
-import com.example.jocene.viewmodel.shopping.ShoppingViewModelProviderFactory
-import com.example.jocene.adapters.recyclerview.ProductsRecyclerAdapter
 
-class AccessoryFragment : Fragment(R.layout.fragment_enlightening) {
+class AccessoryFragment(
+    var adapter: ProductsRecyclerAdapter,
+    var layoutManager: LinearLayoutManager
+) : Fragment(R.layout.fragment_enlightening) {
     val TAG = "AccessoryFragment"
     private lateinit var viewModel: ShoppingViewModel
     private lateinit var binding: FragmentAccessoryBinding
@@ -88,7 +86,7 @@ class AccessoryFragment : Fragment(R.layout.fragment_enlightening) {
 
     private fun productsPaging() {
         binding.scrollCupboard.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { v, scrollX, scrollY, oldScrollX, oldScrollY ->
-            if (v!!.getChildAt(0).bottom <= (v.height + scrollY)) {
+            if (v.getChildAt(0).bottom <= (v.height + scrollY)) {
                 viewModel.getAccessories(productsAdapter.differ.currentList.size)
             }
         })
@@ -181,7 +179,7 @@ class AccessoryFragment : Fragment(R.layout.fragment_enlightening) {
         binding.rvHeader.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             adapter = headerAdapter
-            addItemDecoration(HorizantalSpacingItemDecorator(100))
+            addItemDecoration(HorizontalSpacingItemDecorator(100))
         }
     }
 

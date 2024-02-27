@@ -3,6 +3,7 @@ package com.example.jocene.adapters.recyclerview
 import android.graphics.Paint
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -11,7 +12,7 @@ import com.example.jocene.databinding.BestDealItemBinding
 import com.example.jocene.model.Product
 import com.example.jocene.util.Constants.Companion.IMAGES
 
-class BestDealsRecyclerAdapter :
+class BestDealsRecyclerAdapter(val imgBestDeal: ImageView) :
     RecyclerView.Adapter<BestDealsRecyclerAdapter.BestDealsRecyclerAdapterViewHolder>() {
 
     inner class BestDealsRecyclerAdapterViewHolder(val binding: BestDealItemBinding) :

@@ -1,7 +1,9 @@
 package com.example.jocene.firebaseDatabase
 
 import android.util.Log
+import com.example.jocene.model.Address
 import com.example.jocene.model.CartProduct
+import com.example.jocene.model.Order
 import com.example.jocene.model.User
 import com.example.jocene.util.Constants.Companion.ADDRESS_COLLECTION
 import com.example.jocene.util.Constants.Companion.BEST_DEALS
@@ -13,24 +15,6 @@ import com.example.jocene.util.Constants.Companion.COLOR
 import com.example.jocene.util.Constants.Companion.CUPBOARD_CATEGORY
 import com.example.jocene.util.Constants.Companion.ID
 import com.example.jocene.util.Constants.Companion.ORDERS
-import com.example.jocene.util.Constants.Companion.PRODUCTS_COLLECTION
-import com.example.jocene.util.Constants.Companion.QUANTITY
-import com.example.jocene.util.Constants.Companion.SIZE
-import com.example.jocene.util.Constants.Companion.STORES_COLLECTION
-import com.example.jocene.util.Constants.Companion.USERS_COLLECTION
-import com.example.jocene.model.*
-import com.example.jocene.util.Constants.Companion.ADDRESS_COLLECTION
-import com.example.jocene.util.Constants.Companion.BEST_DEALS
-import com.example.jocene.util.Constants.Companion.CART_COLLECTION
-import com.example.jocene.util.Constants.Companion.CATEGORIES_COLLECTION
-import com.example.jocene.util.Constants.Companion.CATEGORY
-import com.example.jocene.util.Constants.Companion.CHAIR_CATEGORY
-import com.example.jocene.util.Constants.Companion.CLOTHES
-import com.example.jocene.util.Constants.Companion.COLOR
-import com.example.jocene.util.Constants.Companion.CUPBOARD_CATEGORY
-import com.example.jocene.util.Constants.Companion.ID
-import com.example.jocene.util.Constants.Companion.ORDERS
-import com.example.jocene.util.Constants.Companion.ORDER_CONFIRM_STATE
 import com.example.jocene.util.Constants.Companion.ORDER_PLACED_STATE
 import com.example.jocene.util.Constants.Companion.PRICE
 import com.example.jocene.util.Constants.Companion.PRODUCTS_COLLECTION
@@ -43,18 +27,13 @@ import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.AuthCredential
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.Query
 import com.google.firebase.firestore.Transaction
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.UploadTask
 import com.google.firebase.storage.ktx.storage
-import java.util.*
-import kotlin.collections.ArrayList
-import kotlin.collections.HashMap
-import kotlin.random.Random
+import java.util.Calendar
 
 class FirebaseDb {
     private val usersCollectionRef = Firebase.firestore.collection(USERS_COLLECTION)
@@ -64,6 +43,8 @@ class FirebaseDb {
     private val firebaseStorage = Firebase.storage.reference
 
     val userUid = FirebaseAuth.getInstance().currentUser?.uid
+    val db = Firebase.firestore
+
 
     private val userCartCollection = userUid?.let {
         Firebase.firestore.collection(USERS_COLLECTION).document(it).collection(CART_COLLECTION)
@@ -83,6 +64,7 @@ class FirebaseDb {
     fun getMostRequestedProducts(category: String,page:Long) =
         productsCollection.whereEqualTo(CATEGORY, category)
             .orderBy(ORDERS, Query.Direction.DESCENDING).limit(page).get()
+
 
 
     fun createNewUser(
@@ -329,7 +311,7 @@ class FirebaseDb {
     fun updateUserInformation(user: User) =
         Firebase.firestore.runTransaction { transaction ->
             val userPath = usersCollectionRef.document(Firebase.auth.currentUser!!.uid)
-            if (user.imagePath.isNotEmpty()) {
+            if (user.imagePath!!.isNotEmpty()) {
                 transaction.set(userPath, user)
             } else {
                 val imagePath = transaction.get(userPath)["imagePath"] as String
@@ -414,3 +396,4 @@ class FirebaseDb {
 
     fun logout() = Firebase.auth.signOut()
 }
+

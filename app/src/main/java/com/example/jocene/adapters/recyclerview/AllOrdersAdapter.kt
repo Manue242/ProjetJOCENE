@@ -1,23 +1,20 @@
-package com.example.kleine.adapters.recyclerview
+package com.example.jocene.adapters.recyclerview
 
 import android.annotation.SuppressLint
 import android.content.res.ColorStateList
-import android.graphics.PorterDuff
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
-import androidx.core.content.ContextCompat
-import androidx.core.widget.ImageViewCompat
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.example.kleine.R
-import com.example.kleine.databinding.RecyclerViewAllOrdersItemBinding
-import com.example.kleine.model.Order
-import com.example.kleine.util.Constants.Companion.ORDER_CONFIRM_STATE
-import com.example.kleine.util.Constants.Companion.ORDER_Delivered_STATE
-import com.example.kleine.util.Constants.Companion.ORDER_PLACED_STATE
-import com.example.kleine.util.Constants.Companion.ORDER_SHIPPED_STATE
+import com.example.jocene.R
+import com.example.jocene.databinding.RecyclerViewAllOrdersItemBinding
+import com.example.jocene.model.Order
+import com.example.jocene.util.Constants.Companion.ORDER_CONFIRM_STATE
+import com.example.jocene.util.Constants.Companion.ORDER_Delivered_STATE
+import com.example.jocene.util.Constants.Companion.ORDER_PLACED_STATE
+import com.example.jocene.util.Constants.Companion.ORDER_SHIPPED_STATE
 import java.text.SimpleDateFormat
 
 class AllOrdersAdapter : RecyclerView.Adapter<AllOrdersAdapter.AllOrdersAdapterViewHolder>() {

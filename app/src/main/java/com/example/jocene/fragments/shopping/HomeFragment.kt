@@ -1,4 +1,4 @@
-package com.example.kleine.fragments.shopping
+package com.example.jocene.fragments.shopping
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,14 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.fragment.navArgs
-import com.example.kleine.R
-import com.example.kleine.activities.ShoppingActivity
-import com.example.kleine.adapters.viewpager.HomeViewpagerAdapter
-import com.example.kleine.databinding.FragmentHomeBinding
-import com.example.kleine.fragments.categories.*
-import com.example.kleine.fragments.categories.HomeProductsFragment
-import com.example.kleine.viewmodel.shopping.ShoppingViewModel
+import com.example.jocene.R
+import com.example.jocene.activities.ShoppingActivity
+import com.example.jocene.adapters.viewpager.HomeViewpagerAdapter
+import com.example.jocene.databinding.FragmentHomeBinding
+import com.example.jocene.fragments.categories.*
+import com.example.jocene.fragments.categories.HomeProductsFragment
+import com.example.jocene.viewmodel.shopping.ShoppingViewModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.tabs.TabLayoutMediator

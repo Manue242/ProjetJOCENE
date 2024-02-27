@@ -8,7 +8,7 @@ import com.example.jocene.model.CartProduct
 import com.example.jocene.model.Order
 import com.example.jocene.resource.Resource
 import com.example.jocene.util.Constants.Companion.ORDER_PLACED_STATE
-import java.util.*
+import java.util.Calendar
 import kotlin.random.Random
 
 //change this later and add view model provider factory

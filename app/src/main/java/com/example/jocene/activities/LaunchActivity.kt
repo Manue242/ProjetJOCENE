@@ -1,5 +1,6 @@
 package com.example.jocene.activities
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
@@ -11,12 +12,13 @@ import com.example.jocene.util.Constants.Companion.FURNITURE_CATEGORY
 import com.example.jocene.util.Constants.Companion.IMAGES
 import com.example.jocene.util.Constants.Companion.PRODUCTS_COLLECTION
 import com.example.jocene.util.Constants.Companion.SIZES
-import com.example.jocene.viewmodel.lunchapp.JoceneViewModel
-import com.example.jocene.viewmodel.lunchapp.ViewModelProviderFactory
+import com.example.jocene.viewmodel.launchapp.JoceneViewModel
+import com.example.jocene.viewmodel.launchapp.ViewModelProviderFactory
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
-class LunchActivity : AppCompatActivity() {
+@SuppressLint("CustomSplashScreen")
+class LaunchActivity : AppCompatActivity() {
     val viewModel by lazy {
         val firebaseDb = FirebaseDb()
         val viewModelFactory = ViewModelProviderFactory(firebaseDb)
@@ -25,7 +27,7 @@ class LunchActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_lunch)
+        setContentView(R.layout.activity_launch)
 
 
 
@@ -78,11 +80,11 @@ class LunchActivity : AppCompatActivity() {
 
         sizes.put(SIZES,sizesList.toList())
 
-        val prodcut = Product(1208025,title, description, category, newPrice,price, seller, images, colors, sizes,orders,null,sizeUnit)
+        val product = Product(1208025,title, description, category, newPrice,price, seller, images, colors, sizes,orders,null,sizeUnit)
 
         Firebase.firestore.collection(PRODUCTS_COLLECTION)
             .document()
-            .set(prodcut)
+            .set(product)
     }
 
 }

@@ -42,6 +42,7 @@
         android:layout_height="226dp"
         app:srcCompat="@drawable/test_image_cchair"
         tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="186dp" />
+        tools:layout_editor_absoluteY="186dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
