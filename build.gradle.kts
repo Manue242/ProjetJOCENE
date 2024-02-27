@@ -10,5 +10,17 @@ plugins {
     id("org.jetbrains.kotlin.android") version "1.9.22" apply false
     // Add the dependency for the Google services Gradle plugin
     id("com.google.gms.google-services") version "4.4.0" apply false
+
+    /*allprojects {
+        repositories {
+            maven {
+                url  "https://cardinalcommerceprod.jfrog.io/artifactory/android"
+                credentials {
+                    username "paypal_sgerritz"
+                    password "AKCp8jQ8tAahqpT5JjZ4FRP2mW7GMoFZ674kGqHmupTesKeAY2G8NcmPKLuTxTGkKjDLRzDUQ"
+                }
+            }
+        }
+    }*/
 }
 
