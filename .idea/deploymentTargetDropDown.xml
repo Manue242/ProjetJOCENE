@@ -2,45 +2,13 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="app">
-        <State>
-          <targetSelectedWithDropDown>
-            <Target>
-              <type value="QUICK_BOOT_TARGET" />
-              <deviceKey>
-                <Key>
-                  <type value="VIRTUAL_DEVICE_PATH" />
-
-                  <value value="C:\Users\Admin\.android\avd\Pixel_7_API_30.avd" />
-
-                  <value value="C:\Users\pc\.android\avd\pixel_3a_pie_9_0_-_api_28.avd" />
-
-                </Key>
-              </deviceKey>
-            </Target>
-          </targetSelectedWithDropDown>
-
-          <timeTargetWasSelectedWithDropDown value="2024-02-21T21:06:25.086420600Z" />
-        </State>
-
-          <timeTargetWasSelectedWithDropDown value="2024-01-16T14:53:35.903081600Z" />
-          <targetsSelectedWithDialog>
-            <Target>
-              <type value="QUICK_BOOT_TARGET" />
-              <deviceKey>
-                <Key>
-                  <type value="VIRTUAL_DEVICE_PATH" />
-                  <value value="C:\Users\pc\.android\avd\pixel_3a_pie_9_0_-_api_28.avd" />
-                </Key>
-              </deviceKey>
-            </Target>
-          </targetsSelectedWithDialog>
-        </State>
-      </entry>
-      <entry key="deliveryAdressActivity">
+      <entry key="Details_Activity">
         <State />
       </entry>
-      <entry key="fullBagActivity">
+      <entry key="RegisterActivity">
+        <State />
+      </entry>
+      <entry key="emptyBagActivity">
         <State>
           <targetSelectedWithDropDown>
             <Target>
@@ -53,26 +21,14 @@
               </deviceKey>
             </Target>
           </targetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-02-01T14:49:55.751704300Z" />
+          <timeTargetWasSelectedWithDropDown value="2024-02-26T22:42:16.686116100Z" />
         </State>
+      </entry>
+      <entry key="fullBagActivity">
+        <State />
       </entry>
       <entry key="noSavedItemActivity">
         <State />
-      </entry>
-      <entry key="orderPlacedActivity">
-        <State />
-      </entry>
-      <entry key="paymentActivity">
-      </entry>
-      <entry key="contactInfoActivity">
-        <State />
-      </entry>
-      <entry key="deli_payMethodActivity">
-        <State />
-      </entry>
-      <entry key="emptyBagActivity">
-        <State />
-
       </entry>
     </value>
   </component>

@@ -19,8 +19,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-=======
-
     }
 
     fun register(view: View) {}
